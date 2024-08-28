@@ -272,6 +272,15 @@ Here's a list of common array methods and properties in JavaScript, along with o
     console.log(result); // Output: [3, 4, 5, 4, 5, 6, 7, 8]
     ```
 
+26. Array of initial length and filled with a value
+
+    ```javascript
+    // Create an array of length 10 and fill it with 0s
+    let array = new Array(10).fill(0);
+
+    console.log(array); // Output: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    ```
+
 ## String in JS
 
 Here's a list of common string methods and properties in JavaScript, along with one-line explanations:
