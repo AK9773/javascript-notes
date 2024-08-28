@@ -6,91 +6,91 @@ Here's a list of common array methods and properties in JavaScript, along with o
 
 ### Properties
 
-1. length:  
-   Explanation: Returns the number of elements in the array.
+1.       length:
+    Explanation: Returns the number of elements in the array.
 
 ### Methods:
 
-1. push(element):
+1.       push(element):
 
-   Explanation: Adds one or more elements to the end of an array and returns the new length of the array.
+    Explanation: Adds one or more elements to the end of an array and returns the new length of the array.
 
-2. pop():
+2.       pop():
 
-   Explanation: Removes the last element from an array and returns that element.
+    Explanation: Removes the last element from an array and returns that element.
 
-3. shift():
+3.       shift():
 
-   Explanation: Removes the first element from an array and returns that element.
+    Explanation: Removes the first element from an array and returns that element.
 
-4. unshift(element):
+4.       unshift(element):
 
-   Explanation: Adds one or more elements to the beginning of an array and returns the new length of the array.
+    Explanation: Adds one or more elements to the beginning of an array and returns the new length of the array.
 
-   ```javascript
-   // Create an array of fruits
-   let fruits = ["Apple", "Banana", "Cherry"];
+    ```javascript
+    // Create an array of fruits
+    let fruits = ["Apple", "Banana", "Cherry"];
 
-   // Use unshift() to add a new element at the beginning of the array
-   fruits.unshift("Mango");
+    // Use unshift() to add a new element at the beginning of the array
+    fruits.unshift("Mango");
 
-   // Display the updated array
-   console.log("Array after unshift:", fruits); // ['Mango', 'Apple', 'Banana', 'Cherry']
-   ```
+    // Display the updated array
+    console.log("Array after unshift:", fruits); // ['Mango', 'Apple', 'Banana', 'Cherry']
+    ```
 
-5. concat(array):
+5.       concat(array):
 
-   Explanation: Merges two or more arrays and returns a new array without changing the original arrays.
+    Explanation: Merges two or more arrays and returns a new array without changing the original arrays.
 
-6. slice(start, end):
+6.       slice(start, end):
 
-   Explanation: Returns a shallow copy of a portion of an array into a new array, starting from start index up to, but not including, end index.
+    Explanation: Returns a shallow copy of a portion of an array into a new array, starting from start index up to, but not including, end index.
 
-7. splice(start, deleteCount, item1, item2, ...):
+7.       splice(start, deleteCount, item1, item2, ...):
 
-   Explanation: Changes the contents of an array by removing, replacing, or adding elements and returns the removed elements as an array.
+    Explanation: Changes the contents of an array by removing, replacing, or adding elements and returns the removed elements as an array.
 
-   ```javascript
-   // Original array
-   let fruits = ["Apple", "Banana", "Cherry", "Date", "Elderberry"];
+    ```javascript
+    // Original array
+    let fruits = ["Apple", "Banana", "Cherry", "Date", "Elderberry"];
 
-   // Use splice to remove 2 elements starting from index 1
-   // This will remove 'Banana' and 'Cherry'
-   let removedFruits = fruits.splice(1, 2);
+    // Use splice to remove 2 elements starting from index 1
+    // This will remove 'Banana' and 'Cherry'
+    let removedFruits = fruits.splice(1, 2);
 
-   console.log(fruits); // Output: ['Apple', 'Date', 'Elderberry']
-   console.log(removedFruits); // Output: ['Banana', 'Cherry']
+    console.log(fruits); // Output: ['Apple', 'Date', 'Elderberry']
+    console.log(removedFruits); // Output: ['Banana', 'Cherry']
 
-   // Use splice to add new elements at index 1
-   // This will add 'Blueberry' and 'Fig' at index 1
-   fruits.splice(1, 0, "Blueberry", "Fig");
+    // Use splice to add new elements at index 1
+    // This will add 'Blueberry' and 'Fig' at index 1
+    fruits.splice(1, 0, "Blueberry", "Fig");
 
-   console.log(fruits); // Output: ['Apple', 'Blueberry', 'Fig', 'Date', 'Elderberry']
+    console.log(fruits); // Output: ['Apple', 'Blueberry', 'Fig', 'Date', 'Elderberry']
 
-   // Use splice to replace elements starting from index 2
-   // This will remove 'Fig' and 'Date' and add 'Grape' and 'Honeydew' at index 2
-   fruits.splice(2, 2, "Grape", "Honeydew");
+    // Use splice to replace elements starting from index 2
+    // This will remove 'Fig' and 'Date' and add 'Grape' and 'Honeydew' at index 2
+    fruits.splice(2, 2, "Grape", "Honeydew");
 
-   console.log(fruits); // Output: ['Apple', 'Blueberry', 'Grape', 'Honeydew', 'Elderberry']
-   ```
+    console.log(fruits); // Output: ['Apple', 'Blueberry', 'Grape', 'Honeydew', 'Elderberry']
+    ```
 
-8. indexOf(element):
+8.       indexOf(element):
 
-   Explanation: Returns the first index at which a given element can be found in the array, or -1 if it is not present.
+    Explanation: Returns the first index at which a given element can be found in the array, or -1 if it is not present.
 
-9. lastIndexOf(element):
+9.       lastIndexOf(element):
 
-   Explanation: Returns the last index at which a given element can be found in the array, or -1 if it is not present.
+    Explanation: Returns the last index at which a given element can be found in the array, or -1 if it is not present.
 
-10. includes(element):
+10.     includes(element):
 
     Explanation: Returns true if the array contains the specified element, otherwise returns false.
 
-11. forEach(callback):
+11.     forEach(callback):
 
     Explanation: Executes a provided function once for each array element and returns undefined.
 
-12. map(callback):
+12.     map(callback):
 
     Explanation: Creates a new array with the results of calling a provided function on every element in the array.
 
@@ -107,7 +107,7 @@ Here's a list of common array methods and properties in JavaScript, along with o
     console.log(doubledNumbers); // [2, 4, 6, 8, 10]
     ```
 
-13. filter(callback):
+13.     filter(callback):
 
     Explanation: Creates a new array with all elements that pass the test implemented by the provided function.
 
@@ -124,7 +124,7 @@ Here's a list of common array methods and properties in JavaScript, along with o
     console.log(evenNumbers); // Output: [2, 4, 6, 8, 10]
     ```
 
-14. reduce(callback, initialValue):
+14.     reduce(callback, initialValue):
 
     Explanation: Executes a reducer function on each element of the array, resulting in a single output value.
 
@@ -143,11 +143,11 @@ Here's a list of common array methods and properties in JavaScript, along with o
     console.log(sum); // Output: 15
     ```
 
-15. reduceRight(callback, initialValue):
+15.     reduceRight(callback, initialValue):
 
     Explanation: Applies a function against an accumulator and each value of the array (from right to left) to reduce it to a single value.
 
-16. find(callback):
+16.     find(callback):
 
     Explanation: Returns the first element in the array that satisfies the provided testing function, or undefined if no such element exists.
 
@@ -166,7 +166,7 @@ Here's a list of common array methods and properties in JavaScript, along with o
     console.log(foundPerson); // { name: 'Bob', age: 30 }
     ```
 
-17. findIndex(callback):
+17.     findIndex(callback):
 
     Explanation: Returns the index of the first element in the array that satisfies the provided testing function, or -1 if no such element exists.
 
@@ -189,15 +189,15 @@ Here's a list of common array methods and properties in JavaScript, along with o
     console.log(noUserIndex); // Output: -1
     ```
 
-18. every(callback):
+18.     every(callback):
 
     Explanation: Returns true if all elements in the array pass the test implemented by the provided function, otherwise returns false.
 
-19. some(callback):
+19.     some(callback):
 
     Explanation: Returns true if at least one element in the array passes the test implemented by the provided function, otherwise returns false.
 
-20. sort(compareFunction):
+20.     sort(compareFunction):
 
     Explanation: Sorts the elements of an array in place and returns the sorted array.
 
@@ -231,19 +231,19 @@ Here's a list of common array methods and properties in JavaScript, along with o
     // Output: [ { name: 'Jane', age: 25 }, { name: 'John', age: 30 }, { name: 'Bob', age: 35 } ]
     ```
 
-21. reverse():
+21.     reverse():
 
     Explanation: Reverses the order of the elements in an array in place and returns the array.
 
-22. join(separator):
+22.     join(separator):
 
     Explanation: Joins all elements of an array into a string and returns this string, with the elements separated by the specified separator.
 
-23. toString():
+23.     toString():
 
     Explanation: Returns a string representing the array and its elements, separated by commas.
 
-24. fill(value, start, end):
+24.     fill(value, start, end):
 
     Explanation: Fills all the elements of an array from a start index to an end index with a static value and returns the modified array.
 
@@ -257,7 +257,7 @@ Here's a list of common array methods and properties in JavaScript, along with o
     console.log(arr); // Output: [1, 0, 0, 0, 5]
     ```
 
-25. copyWithin(target, start, end):
+25.     copyWithin(target, start, end):
 
     Explanation: Shallow copies part of an array to another location in the same array and returns it without modifying its length.
 
@@ -272,7 +272,7 @@ Here's a list of common array methods and properties in JavaScript, along with o
     console.log(result); // Output: [3, 4, 5, 4, 5, 6, 7, 8]
     ```
 
-26. Array of initial length and filled with a value
+26.     Array of initial length and filled with a value
 
     ```javascript
     // Create an array of length 10 and fill it with 0s
@@ -287,124 +287,124 @@ Here's a list of common string methods and properties in JavaScript, along with 
 
 ### Properties:
 
-1. length:
+1.       length:
 
-   Explanation: Returns the length of the string (number of characters).
+    Explanation: Returns the length of the string (number of characters).
 
 ### Methods:
 
-1. charAt(index):
+1.       charAt(index):
 
-   Explanation: Returns the character at the specified index in the string.
+    Explanation: Returns the character at the specified index in the string.
 
-2. charCodeAt(index):
+2.       charCodeAt(index):
 
-   Explanation: Returns the Unicode value of the character at the specified index.
+    Explanation: Returns the Unicode value of the character at the specified index.
 
-3. concat(string2, string3, ...):
+3.       concat(string2, string3, ...):
 
-   Explanation: Combines two or more strings and returns a new concatenated string.
+    Explanation: Combines two or more strings and returns a new concatenated string.
 
-4. includes(substring, start):
+4.       includes(substring, start):
 
-   Explanation: Returns true if the string contains the specified substring, otherwise returns false.
+    Explanation: Returns true if the string contains the specified substring, otherwise returns false.
 
-5. endsWith(substring, length):
+5.       endsWith(substring, length):
 
-   Explanation: Returns true if the string ends with the specified substring, otherwise returns false.
+    Explanation: Returns true if the string ends with the specified substring, otherwise returns false.
 
-   ```javascript
-   // Example string
-   const str = "Hello, welcome to JavaScript!";
+    ```javascript
+    // Example string
+    const str = "Hello, welcome to JavaScript!";
 
-   // Check if the string ends with "JavaScript!" within its full length
-   const result1 = str.endsWith("JavaScript!");
-   console.log(result1); // Output: true
+    // Check if the string ends with "JavaScript!" within its full length
+    const result1 = str.endsWith("JavaScript!");
+    console.log(result1); // Output: true
 
-   // Check if the string ends with "welcome" within the first 13 characters
-   const result2 = str.endsWith("welcome", 13);
-   console.log(result2); // Output: true
-   ```
+    // Check if the string ends with "welcome" within the first 13 characters
+    const result2 = str.endsWith("welcome", 13);
+    console.log(result2); // Output: true
+    ```
 
-6. indexOf(substring, start):
+6.       indexOf(substring, start):
 
-   Explanation: Returns the index of the first occurrence of the specified substring, or -1 if not found.
+    Explanation: Returns the index of the first occurrence of the specified substring, or -1 if not found.
 
-   ```javascript
-   // Example string
-   let sentence = "The quick brown fox jumps over the lazy dog.";
+    ```javascript
+    // Example string
+    let sentence = "The quick brown fox jumps over the lazy dog.";
 
-   // Find the first occurrence of the substring "fox"
-   let firstIndex = sentence.indexOf("fox");
+    // Find the first occurrence of the substring "fox"
+    let firstIndex = sentence.indexOf("fox");
 
-   // Find the first occurrence of the substring "the" starting from index 10
-   let secondIndex = sentence.indexOf("the", 10);
+    // Find the first occurrence of the substring "the" starting from index 10
+    let secondIndex = sentence.indexOf("the", 10);
 
-   console.log(`The substring "fox" is found at index: ${firstIndex}`);
-   // Output: The substring "fox" is found at index: 16
+    console.log(`The substring "fox" is found at index: ${firstIndex}`);
+    // Output: The substring "fox" is found at index: 16
 
-   console.log(`The substring "the" is found at index: ${secondIndex}`);
-   // Output: The substring "the" is found at index: 31
-   ```
+    console.log(`The substring "the" is found at index: ${secondIndex}`);
+    // Output: The substring "the" is found at index: 31
+    ```
 
-7. lastIndexOf(substring, start):
+7.       lastIndexOf(substring, start):
 
-   Explanation: Returns the index of the last occurrence of the specified substring, or -1 if not found.
+    Explanation: Returns the index of the last occurrence of the specified substring, or -1 if not found.
 
-   ```javascript
-   // Example string
-   let text = "Hello, welcome to the JavaScript world. JavaScript is fun!";
+    ```javascript
+    // Example string
+    let text = "Hello, welcome to the JavaScript world. JavaScript is fun!";
 
-   // Search for the last occurrence of the substring "JavaScript"
-   let lastIndex = text.lastIndexOf("JavaScript");
+    // Search for the last occurrence of the substring "JavaScript"
+    let lastIndex = text.lastIndexOf("JavaScript");
 
-   // Output the result
-   console.log("Last occurrence of 'JavaScript':", lastIndex); // Output: 37
+    // Output the result
+    console.log("Last occurrence of 'JavaScript':", lastIndex); // Output: 37
 
-   // Search for the last occurrence of the substring "JavaScript" starting from index 30
-   let lastIndexFromStart = text.lastIndexOf("JavaScript", 30);
+    // Search for the last occurrence of the substring "JavaScript" starting from index 30
+    let lastIndexFromStart = text.lastIndexOf("JavaScript", 30);
 
-   // Output the result
-   console.log(
-     "Last occurrence of 'JavaScript' before index 30:",
-     lastIndexFromStart
-   ); // Output: 21
-   ```
+    // Output the result
+    console.log(
+      "Last occurrence of 'JavaScript' before index 30:",
+      lastIndexFromStart
+    ); // Output: 21
+    ```
 
-8. slice(start, end):
+8.       slice(start, end):
 
-   Explanation: Extracts a part of the string and returns it as a new string, from the start index up to, but not including, the end index.
+    Explanation: Extracts a part of the string and returns it as a new string, from the start index up to, but not including, the end index.
 
-   ```javascript
-   // Example string
-   let text = "Hello, world!";
+    ```javascript
+    // Example string
+    let text = "Hello, world!";
 
-   // Using slice() to extract a portion of the string
-   let slicedText = text.slice(7, 12);
+    // Using slice() to extract a portion of the string
+    let slicedText = text.slice(7, 12);
 
-   console.log(slicedText); // Output: "world"
-   ```
+    console.log(slicedText); // Output: "world"
+    ```
 
-9. substring(start, end):
+9.       substring(start, end):
 
-   Explanation: Returns a portion of the string between the start and end indexes.
+    Explanation: Returns a portion of the string between the start and end indexes.
 
-   ```javascript
-   // Example string
-   let text = "Hello, world!";
+    ```javascript
+    // Example string
+    let text = "Hello, world!";
 
-   // Extract a substring from index 0 to index 5 (not including index 5)
-   let result = text.substring(0, 5);
+    // Extract a substring from index 0 to index 5 (not including index 5)
+    let result = text.substring(0, 5);
 
-   console.log(result); // Output: "Hello"
+    console.log(result); // Output: "Hello"
 
-   // Extract a substring from index 7 to the end of the string
-   let result2 = text.substring(7);
+    // Extract a substring from index 7 to the end of the string
+    let result2 = text.substring(7);
 
-   console.log(result2); // Output: "world!"
-   ```
+    console.log(result2); // Output: "world!"
+    ```
 
-10. substr(start, length):
+10.     substr(start, length):
 
     Explanation: Returns a portion of the string, starting at the start index, and up to the specified length of characters.
 
@@ -418,35 +418,35 @@ Here's a list of common string methods and properties in JavaScript, along with 
     console.log(result); // Output: "World"
     ```
 
-11. toLowerCase():
+11.     toLowerCase():
 
     Explanation: Returns a new string with all characters converted to lowercase.
 
-12. toUpperCase():
+12.     toUpperCase():
 
     Explanation: Returns a new string with all characters converted to uppercase.
 
-13. trim():
+13.     trim():
 
     Explanation: Removes whitespace from both ends of the string and returns the trimmed string.
 
-14. trimStart():
+14.     trimStart():
 
     Explanation: Removes whitespace from the beginning of the string and returns the trimmed string.
 
-15. trimEnd():
+15.     trimEnd():
 
     Explanation: Removes whitespace from the end of the string and returns the trimmed string.
 
-16. replace(searchValue, newValue):
+16.     replace(searchValue, newValue):
 
     Explanation: Returns a new string with the first match of a pattern replaced by a new value.
 
-17. replaceAll(searchValue, newValue):
+17.     replaceAll(searchValue, newValue):
 
     Explanation: Returns a new string with all matches of a pattern replaced by a new value.
 
-18. split(separator, limit):
+18.     split(separator, limit):
 
     Explanation: Splits a string into an array of substrings, using a specified separator, and returns the array.
 
@@ -470,11 +470,11 @@ Here's a list of common string methods and properties in JavaScript, along with 
     // Output: ["", "pple,b", "n", "n", ",cherry,dr", "gonfruit,elderberry"]
     ```
 
-19. startsWith(substring, start):
+19.     startsWith(substring, start):
 
     Explanation: Returns true if the string begins with the specified substring, otherwise returns false.
 
-20. match(regex):
+20.     match(regex):
 
     Explanation: Executes a search for a match between a regular expression and the string, returning an array of matches or null.
 
@@ -492,7 +492,7 @@ Here's a list of common string methods and properties in JavaScript, along with 
     console.log(matches); // ["ain", "ain", "ain"]
     ```
 
-21. matchAll(regex):
+21.     matchAll(regex):
 
     Explanation: Returns an iterator of all results matching a string against a regular expression, including capturing groups.
 
@@ -516,11 +516,11 @@ Here's a list of common string methods and properties in JavaScript, along with 
     // Found 'fox' at index 45
     ```
 
-22. search(regex):
+22.     search(regex):
 
     Explanation: Executes a search for a match between a regular expression and the string, returning the index of the match or -1 if not found.
 
-23. padStart(targetLength, padString):
+23.     padStart(targetLength, padString):
 
     Explanation: Pads the current string from the start with a specified string until it reaches the target length and returns the resulting string.
 
@@ -534,11 +534,11 @@ Here's a list of common string methods and properties in JavaScript, along with 
     console.log(paddedString); // Output: "000123"
     ```
 
-24. padEnd(targetLength, padString):
+24.     padEnd(targetLength, padString):
 
     Explanation: Pads the current string from the end with a specified string until it reaches the target length and returns the resulting string.
 
-25. repeat(count):
+25.     repeat(count):
 
     Explanation: Returns a new string that contains the specified number of copies of the original string.
 
@@ -553,7 +553,7 @@ Here's a list of common string methods and properties in JavaScript, along with 
     console.log(repeatedStr); // "Hello! Hello! Hello! "
     ```
 
-26. localeCompare(compareString):
+26.     localeCompare(compareString):
 
     Explanation: Returns a number indicating whether the string comes before, after, or is equal to another string in sort order.
     localeCompare(compareString):
@@ -567,11 +567,11 @@ Here's a list of common string methods and properties in JavaScript, along with 
     string3.localeCompare(string4, 'en', { sensitivity: 'base' }): Compares string3 with string4 considering case-insensitivity and accent-insensitivity due to the options specified.
     In the first comparison, 'apple' comes before 'banana', and in the second comparison, 'résumé' and 'resume' are considered equal when ignoring accents.
 
-27. toString():
+27.     toString():
 
     Explanation: Returns a string representing the specified object (in this case, the string itself).
 
-28. valueOf():
+28.     valueOf():
 
     Explanation: Returns the primitive value of the specified string object (same as toString()).
 
@@ -581,112 +581,112 @@ Here's a list of common object methods and properties in JavaScript, along with 
 
 ### Properties:
 
-1. constructor:
+1.       constructor:
 
-Explanation: Returns the function that created the instance's prototype (usually the constructor function for the object).
+    Explanation: Returns the function that created the instance's prototype (usually the constructor function for the object).
 
-2. prototype:
+2.       prototype:
 
-Explanation: Returns the prototype object of a constructor function (can be used to add methods to all instances of that constructor).
+    Explanation: Returns the prototype object of a constructor function (can be used to add methods to all instances of that constructor).
 
-3. **proto**:
+3.        __proto__:
 
-Explanation: Accesses the internal prototype of the object (deprecated, use Object.getPrototypeOf() instead).
+    Explanation: Accesses the internal prototype of the object (deprecated, use Object.getPrototypeOf() instead).
 
-4. hasOwnProperty(property):
+4.       hasOwnProperty(property):
 
-Explanation: Returns true if the object has the specified property as its own property, not inherited.
+    Explanation: Returns true if the object has the specified property as its own property, not inherited.
 
-5. isPrototypeOf(object):
+5.       isPrototypeOf(object):
 
-Explanation: Returns true if the object is in the prototype chain of the specified object.
+    Explanation: Returns true if the object is in the prototype chain of the specified object.
 
-6. toString():
+6.       toString():
 
-Explanation: Returns a string representing the object (usually "[object Object]").
+    Explanation: Returns a string representing the object (usually "[object Object]").
 
-7. valueOf():
+7.       valueOf():
 
-Explanation: Returns the primitive value of the specified object (same as toString() for objects).
+    Explanation: Returns the primitive value of the specified object (same as toString() for objects).
 
 ### Methods:
 
-1. Object.assign(target, ...sources):
+1.       Object.assign(target, ...sources):
 
-   Explanation: Copies the values of all enumerable properties from one or more source objects to a target object and returns the target object.
+    Explanation: Copies the values of all enumerable properties from one or more source objects to a target object and returns the target object.
 
-2. Object.create(prototype, propertiesObject):
+2.       Object.create(prototype, propertiesObject):
 
-   Explanation: Creates a new object with the specified prototype object and properties.
+    Explanation: Creates a new object with the specified prototype object and properties.
 
-3. Object.defineProperty(obj, prop, descriptor):
+3.       Object.defineProperty(obj, prop, descriptor):
 
-   Explanation: Defines a new property or modifies an existing property on an object, and returns the object.
+    Explanation: Defines a new property or modifies an existing property on an object, and returns the object.
 
-4. Object.defineProperties(obj, props):
+4.       Object.defineProperties(obj, props):
 
-   Explanation: Defines new or modifies existing properties directly on an object, and returns the object.
+    Explanation: Defines new or modifies existing properties directly on an object, and returns the object.
 
-5. Object.entries(obj):
+5.       Object.entries(obj):
 
-   Explanation: Returns an array of the object's own enumerable string-keyed property [key, value] pairs.
+    Explanation: Returns an array of the object's own enumerable string-keyed property [key, value] pairs.
 
-6. Object.freeze(obj):
+6.       Object.freeze(obj):
 
-   Explanation: Freezes an object, preventing new properties from being added, existing properties from being removed or altered, and returns the object.
+    Explanation: Freezes an object, preventing new properties from being added, existing properties from being removed or altered, and returns the object.
 
-7. Object.fromEntries(entries):
+7.       Object.fromEntries(entries):
 
-   Explanation: Converts a list of key-value pairs (arrays) into an object.
+    Explanation: Converts a list of key-value pairs (arrays) into an object.
 
-8. Object.getOwnPropertyDescriptor(obj, prop):
+8.       Object.getOwnPropertyDescriptor(obj, prop):
 
-   Explanation: Returns a property descriptor for a named property of an object.
+    Explanation: Returns a property descriptor for a named property of an object.
 
-9. Object.getOwnPropertyDescriptors(obj):
+9.       Object.getOwnPropertyDescriptors(obj):
 
-   Explanation: Returns an object containing all own property descriptors of a given object.
+    Explanation: Returns an object containing all own property descriptors of a given object.
 
-10. Object.getOwnPropertyNames(obj):
+10.     Object.getOwnPropertyNames(obj):
 
     Explanation: Returns an array of all own property names (including non-enumerable properties) of a given object.
 
-11. Object.getPrototypeOf(obj):
+11.     Object.getPrototypeOf(obj):
 
     Explanation: Returns the prototype of the specified object.
 
-12. Object.is(value1, value2):
+12.     Object.is(value1, value2):
 
     Explanation: Determines whether two values are the same value (similar to ===, but with special handling for NaN and -0).
 
-13. Object.isExtensible(obj):
+13.     Object.isExtensible(obj):
 
     Explanation: Returns true if the object is extensible (i.e., if new properties can be added to it).
 
-14. Object.keys(obj):
+14.     Object.keys(obj):
 
     Explanation: Returns an array of a given object's own enumerable property names.
 
-15. Object.preventExtensions(obj):
+15.     Object.preventExtensions(obj):
 
     Explanation: Prevents new properties from being added to an object and returns the object.
 
-16. Object.seal(obj):
+16.     Object.seal(obj):
 
     Explanation: Seals an object, preventing new properties from being added and marking all existing properties as non-configurable.
 
-17. Object.values(obj):
+17.     Object.values(obj):
 
     Explanation: Returns an array of a given object's own enumerable property values.
 
-18. Object.prototype.hasOwnProperty(prop):
+18.     Object.prototype.hasOwnProperty(prop):
 
     Explanation: Returns true if the object has the specified property as its own property, not inherited from the prototype chain.
 
-19. Object.prototype.toString():
+19.     Object.prototype.toString():
 
     Explanation: Returns a string representation of the object (usually "[object Object]").
 
-20. Object.prototype.toLocaleString():
+20.     Object.prototype.toLocaleString():
 
     Explanation: Returns a string representing the object, with localization applied.
