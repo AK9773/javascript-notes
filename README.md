@@ -11,3 +11,7 @@
 ## Object in JS
 
 [Object in JS](OBJECT.md)
+
+## Map in JS
+
+[Map in JS](MAP.md)
