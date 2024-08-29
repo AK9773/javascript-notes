@@ -70,7 +70,7 @@ Here’s a list of common Map methods and properties in JavaScript, along with o
    // Entry: Key: age, Value: 25
    ```
 
-10. [Symbol.iterator]():
+10. `[Symbol.iterator]()`:
 
     Explanation: Returns an iterator object that iterates over the [key, value] pairs in the Map, allowing the Map to be used in for...of loops and other iterable contexts.
 
