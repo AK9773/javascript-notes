@@ -5,6 +5,7 @@ Here’s a list of common Map methods and properties in JavaScript, along with o
 ## Properties:
 
 1. size:
+
    Explanation: Returns the number of key-value pairs in the Map.
 
 ## Methods:
